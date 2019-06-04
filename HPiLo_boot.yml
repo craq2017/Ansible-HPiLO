@@ -18,11 +18,4 @@
         media: cdrom
         image: "{{ iso_image }}"
       delegate_to: localhost
-
-    - name: Power off the server
-      hpilo_boot:
-        host: "{{ iLo_IP }}"
-        login: "{{ iLo_username }}"
-        password: "{{ iLo_password }}"
-        state: boot_once
-      delegate_to: localhost
+    
