@@ -6,7 +6,8 @@
     iLo_IP: '10.2.1.22'
     iLo_username: 'Administrator'
     iLo_password: 'YGEVBUBL'
-    iso_image: 'http://172.16.90.131/iso/rhel-server-7.6-x86_64-boot.iso'
+    iso_to_boot: 'rhel-server-7.6-x86_64-boot.iso'
+    iso_image: 'http://172.16.90.131/iso/{{ iso_to_boot }}'
 
   tasks:
     - name: Boot the system with an ISO
