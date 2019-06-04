@@ -24,5 +24,5 @@
         host: "{{ iLo_IP }}"
         login: "{{ iLo_username }}"
         password: "{{ iLo_password }}"
-        state: boot_once
+        state: connect
       delegate_to: localhost
