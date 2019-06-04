@@ -4,9 +4,9 @@
 ---
 - hosts: localhost
   vars:
-    iLo_IP: '0.0.0.0' #ILO IP
-    iLo_username: 'username' #ILO IP
-    iLo_password: 'password' #ILO Password
+    iLo_IP: '10.2.1.22' #ILO IP
+    iLo_username: 'Administrator' #ILO IP
+    iLo_password: 'YGEVBUBL' #ILO Password
 
   tasks:
     - hpilo_facts:
